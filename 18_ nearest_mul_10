@@ -1,0 +1,10 @@
+
+def roundToNearest(s: str) -> str:
+    if int(s[-1]) > 5:
+        return str((int(s[:-1] or "0") + 1) * 10)
+    else:
+        return str(int(s[:-1] or "0") * 10)
+print(roundToNearest("29"))
+print(roundToNearest("24"))
+print(roundToNearest("18"))
+print(roundToNearest("6"))
